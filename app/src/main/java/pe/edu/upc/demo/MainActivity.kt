@@ -3,6 +3,8 @@ package pe.edu.upc.demo
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
@@ -36,7 +38,18 @@ fun Greeting(name: String) {
 
 @Composable
 fun Uwu(name: String) {
-    Text(text = "Nyah onichan $name!")
+    Column {
+        Text(text = "Nyah Onichan $name!")
+        Text(text = "Yamete Onesan $name!")
+    }
+
+    /*
+    Row {
+        Text(text = "Onichan $name!")
+        Text(text = "Onesan $name!")
+    }
+    */
+
 }
 
 @Preview(showBackground = true)

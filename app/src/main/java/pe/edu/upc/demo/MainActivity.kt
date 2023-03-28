@@ -34,10 +34,16 @@ fun Greeting(name: String) {
     Text(text = "Hello $name!")
 }
 
+@Composable
+fun Uwu(name: String) {
+    Text(text = "Nyah onichan $name!")
+}
+
 @Preview(showBackground = true)
 @Composable
 fun DefaultPreview() {
     DemoTheme {
-        Greeting("Android")
+        //Greeting("Android")
+        Uwu("Android")
     }
 }

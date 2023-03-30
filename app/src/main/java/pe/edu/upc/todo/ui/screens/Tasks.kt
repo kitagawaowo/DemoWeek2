@@ -14,6 +14,9 @@ fun Tasks() {
         item {
             Text(text = "First item")
         }
+        items(5) {index ->
+            Text(text = "Item: $index")
+        }
     }
 }
 
